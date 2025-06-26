@@ -7,7 +7,6 @@ A minimal Alpine-based Docker image for running Claude Code - Anthropic's agenti
 ```bash
 docker run -it \
   -e ANTHROPIC_API_KEY="your-api-key" \
-  -v $(pwd):/home/claude-user/workspace \
   halfjuice/claude-code:latest
 ```
 
