@@ -12,8 +12,6 @@ RUN apt-get update && apt-get install -y \
     lsb-release \
     && rm -rf /var/lib/apt/lists/*
 
-
-
 # Install Node.js (required for Claude Code)
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs
@@ -23,7 +21,6 @@ ENV PATH="/root/.local/bin:${PATH}"
 
 # Install Claude Code for the claude user
 RUN npm install -g @anthropic-ai/claude-code --prefix=/root/.local
-
 
 # Accept API key as build argument and set as env var
 ARG ANTHROPIC_API_KEY
