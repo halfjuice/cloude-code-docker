@@ -14,6 +14,7 @@ docker run -it \
 ### With Project Directory
 ```bash
 docker run -it \
+  -e ANTHROPIC_API_KEY="your-api-key" \
   -v $(pwd):/home/claude-user/workspace \
   halfjuice/claude-code:latest
 ```
