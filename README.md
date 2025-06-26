@@ -2,6 +2,9 @@
 
 A minimal Alpine-based Docker image for running Claude Code - Anthropic's agentic command line tool. Lightweight and fast (< 200MB).
 
+- Docker: https://hub.docker.com/r/halfjuice/claude-code
+- Github: https://github.com/halfjuice/cloude-code-docker
+
 ## Usage
 
 ```bash
